@@ -21,8 +21,9 @@
 
 ### Screenshot
 
-![](./design/Screenshot1.png)
-![](./design/Screenshot2.png)
+<img src="./design/Screenshot1.png"  width="800"/>
+<img src="./design/Screenshot2.png"  width="250"/>
+
 
 ### Links
 
