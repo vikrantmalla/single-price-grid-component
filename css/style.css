@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    /*Primary */
+    --colorCyan: hsl(179, 62%, 43%);
+    --colorlightCyan: hsl(179, 58%, 47%);
+    --colorBrightYellow: hsl(71, 73%, 54%);
+    /*Neutral */
+    --colorLightgray: hsl(204, 43%, 93%);
+    --colorGrayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--colorLightgray);
+}
+
+.pricecard {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.topcontainer {
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.topcontainer h1 {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--colorCyan);
+    margin-bottom: 30px;
+}
+
+.topcontainer h3 {
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--colorBrightYellow);
+    margin-bottom: 20px;
+}
+
+.topcontainer p {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--colorGrayishBlue);
+    line-height: 2.0;
+    letter-spacing: 0.2px;
+}
+
+.bottomcontainer {
+    display: flex;
+}
+
+.signup {
+    width: 50%;
+    background-color: var(--colorCyan);
+    padding: 30px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0 0 0 10px;
+}
+
+.signup h2 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.signup .pricing {
+    display: flex;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.signup .date {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--colorLightgray);
+    margin: 8px 0 0 8px;
+}
+
+.signup p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--colorLightgray);
+}
+
+.signup button {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 20px 100px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--colorBrightYellow);
+    color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button:hover {
+    background-color: hsl(71, 60%, 49%);
+}
+
+.description {
+    width: 50%;
+    background-color: var(--colorlightCyan);
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0 0 10px 0;
+}
+
+.description h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    color: var(--colorLightgray);
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 90px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 768px) {
+    .pricecard {
+        flex-direction: column;
+        width: 80%;
+    }
+    .topcontainer h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .topcontainer h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .topcontainer p {
+        font-size: 15px;
+        color: var(--colorGrayishBlue);
+        line-height: 2.0;
+        letter-spacing: 0.2px;
+    }
+    .bottomcontainer {
+        flex-direction: row;
+    }
+    .signup {
+        width: 50%;
+        padding: 30px 30px;
+    }
+    .signup h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .signup .pricing {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .signup .date {
+        font-size: 16px;
+        margin: 3px 0 0 3px;
+    }
+    .signup p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .signup button {
+        font-size: 15px;
+        padding: 15px 90px;
+        border-radius: 10px;
+    }
+    .description {
+        width: 50%;
+        padding: 30px 30px;
+    }
+    .description h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .description p {
+        font-size: 16px;
+        margin-right: 40px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+    }
+}
+
+@media(max-width:375px) {
+    .pricecard {
+        flex-direction: column;
+        width: 80%;
+    }
+    .topcontainer {
+        padding: 20px;
+        border-radius: 5px 5px 0 0;
+    }
+    .topcontainer h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .topcontainer h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .topcontainer p {
+        font-size: 12px;
+        color: var(--colorGrayishBlue);
+        line-height: 2.0;
+        letter-spacing: 0.2px;
+    }
+    .bottomcontainer {
+        flex-direction: column;
+    }
+    .signup {
+        width: 100%;
+        padding: 20px 20px;
+        border-radius: 0px;
+    }
+    .signup h2 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .signup .pricing {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .signup .date {
+        font-size: 12px;
+        margin: 3px 0 0 3px;
+    }
+    .signup p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .signup button {
+        font-size: 12px;
+        padding: 15px 90px;
+        border-radius: 5px;
+    }
+    .description {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+    .description h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .description p {
+        font-size: 12px;
+        margin-right: 50px;
+        line-height: 1.8;
+        letter-spacing: 0.2px;
+    }
+}
